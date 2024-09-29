@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]() -->
+- Solution URL: [MrLanter Solution](https://www.frontendmentor.io/solutions/creating-a-responsive-semantic-and-accessible-page-with-scss-IFVGRil9oR)
+- Live Site URL: [MrLanter Live Site](https://mrlanter.github.io/product-preview-card-component/)
 
 ## My process
 
