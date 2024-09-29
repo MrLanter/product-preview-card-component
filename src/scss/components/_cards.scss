@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, .main-page {
+    min-width: 100%;
+    min-height: 90vh;
+}
+
+body {
+    background-color: $Cream;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: $White;
+    width: 35rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-mobile) {
+        flex-direction: row;
+        width: 45rem;
+    }
+
+    .left {
+        img {
+            width: 100%;
+
+            @media (min-width: $breakpoint-mobile) {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    .right {
+        @media (min-width: $breakpoint-mobile) {
+            max-width: 55%;
+        }
+        padding: 1.87rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .infos-product {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            .type {
+                font-family: $Montserrat;
+                font-weight: 500;
+                color: $Dark-grayish-blue;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+
+            .title {
+                font-family: $Fraunces;
+                font-weight: 700;
+                color: $Very-dark-blue;
+                font-size: 2.5rem;
+            }
+
+            .description {
+                font-family: $Montserrat;
+                color: $Dark-grayish-blue;
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+        }
+
+        .money-zone {
+            margin-top: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .price-current {
+                    color: $Dark-cyan;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    font-family: $Fraunces;
+
+                }
+
+                .price-old {
+                    color: $Dark-grayish-blue;
+                    font-size: 0.9rem;
+                    text-decoration: line-through;
+                }
+            }
+
+            .add-to-cart {
+                width: 100%;
+                border-radius: 10px;
+                border: 0;
+                background-color: $Dark-cyan;
+                color: $White;
+                font-family: $Montserrat;
+                font-weight: 700;
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+                font-size: 1rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.93rem;
+                transition: 0.3s all ease;
+
+                &:hover {
+                    background-color: darken($Dark-cyan, 10%);
+                }
+
+                img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}

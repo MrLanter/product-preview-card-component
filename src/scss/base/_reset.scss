@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.2;
+    font-family: $Montserrat;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.87rem;
+}
+
+img, video, iframe {
+    max-inline-size: 100%;
+    block-size: auto;
+}

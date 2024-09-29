@@ -1,0 +1,17 @@
+$font-path: '../../src/assets/fonts/';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('#{$font-path}Montserrat/Montserrat-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('#{$font-path}Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Favicon WebP -->
+  <link rel="icon" type="image/webp" sizes="32x32" href="./src/assets/images/favicon-32x32.webp">
+  <!-- Fallback for browsers that do not support WebP -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <meta name="description" content="This is a component of the Product Overview Card designed by Frontend Mentor and coded by MrLanter">
+
+  <link rel="stylesheet" href="./dist/css/main.css">
+
+  <meta name="author" content="MrLanter">
+  <meta name="designer" content="Frontend Mentor">
+  <meta property="og:title" content="Product preview card component">
+  <meta property="og:description" content="A component of the Product Overview Card">
+  <!-- <meta property="og:image" content="">
+  <meta property="og:url" content=""> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Product preview card component">
+  <meta name="twitter:description" content="A component of the Product Overview Card">
+  <!-- <meta name="twitter:image" content=""> -->
+</head>
+<body>
+  <main class="main-page">
+    <article class="card">
+      <div class="left">
+        <picture>
+          <source srcset="./src/assets/images/image-product-mobile.webp" media="(max-width: 48em)">
+          <source srcset="./src/assets/images/image-product-mobile.jpg" media="(max-width: 48em)">
+          <source srcset="./src/assets/images/image-product-desktop.webp" media="(min-width: 48em)">
+          <img src="./src/assets/images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum bottle">
+        </picture>
+      </div>
+      <div class="right">
+        <section class="infos-product">
+          <h2 class="type">Perfume</h2>
+          <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+        </section>
+        <section class="money-zone">
+          <div class="price">
+            <p class="price-current">$149.99</p>
+            <p class="price-old"><del>$169.99</del></p>
+          </div>
+          <button class="add-to-cart" aria-label="Add Gabrielle Essence Eau De Parfum to cart"><img src="./src/assets/images/icon-cart.svg" alt="Icon Cart">Add to Cart</button>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/MrLanter" target="_blank" rel="noopener noreferrer">MrLanter</a>.
+  </footer>
+</body>
+</html>
